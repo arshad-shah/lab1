@@ -1,0 +1,16 @@
+.social-links {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.social-icon {
+	font-size: 40px;
+	margin-right: 10px;
+	color: #333; /* specify a color for the icons */
+	transition: color 0.3s ease; /* add a transition for hover effect */
+}
+
+.social-icon:hover {
+	color: #2196f3; /* specify a hover color for the icons */
+}

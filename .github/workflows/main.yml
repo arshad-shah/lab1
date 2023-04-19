@@ -29,3 +29,10 @@ jobs:
 
             - name: Build project
               run: npm run build
+              
+            - name: Publish Built package to a branch
+              uses: kategengler/put-built-npm-package-contents-on-branch@v1.0.0
+              with: 
+                    token: ${{secrets.GITHUB_TOKEN}}
+                    pack-command: npm run build
+                    branch: build
